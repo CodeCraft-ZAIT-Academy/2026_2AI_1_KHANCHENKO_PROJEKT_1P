@@ -1,1 +1,1 @@
-# 2026_2AI_1_Khanchenko_SneakerStore-
+# 2026_2AI_1_KHANCHENKO_PROJEKT_1P
