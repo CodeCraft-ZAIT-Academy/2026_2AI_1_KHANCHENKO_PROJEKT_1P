@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Sneaker Store</title>
@@ -44,6 +44,112 @@
             object-fit: contain;
         }
 
+        .main {
+            display: flex;
+            padding: 60px 60px;
+            align-items: flex-start;
+        }
+
+        .brands {
+            width: 180px;
+            min-width: 180px;
+            border-right: 1px solid lightgray;
+            padding-right: 25px;
+            padding-top: 15px;
+            margin-left: 30px;
+        }
+
+        .brands h2 {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .brands ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .brands li {
+            margin-bottom: 22px;
+        }
+
+        .brands a {
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .brands a:hover {
+            color: gray;
+            padding-left: 5px;
+        }
+
+        /* Товары */
+
+        .krosovki {
+            display: flex;
+            gap: 35px;
+            margin-left: 40px;
+            align-items: flex-start;
+
+        }
+
+        .kros {
+            width: 300px;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            width: 300px;
+        }
+
+        /* Контейнер картинки */
+
+        .foto {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            background-color: white;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Скидка справа сверху */
+
+        .skidka {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding: 9px 14px;
+            font-size: 15px;
+        }
+
+        /* Цена справа снизу */
+
+        .price {
+            display: block;
+            text-align: left;
+            color: black;
+            font-size: 17px;
+            margin-top: 12px;
+        }
+
+        /* Название под картинкой */
+
+        .kros h3 {
+            font-size: 16px;
+            margin-top:25px;
+        }
+
+        .kros:hover img {
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -65,5 +171,83 @@
 
     </div>
 
+    <div class="main">
+
+
+        <div class="brands">
+
+            <h2>BRANDS</h2>
+
+            <ul>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Jordan</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">New Balance</a></li>
+                <li><a href="#">Vans</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="krosovki">
+
+            <!-- Nike -->
+
+            <a href="nike1.html" class="kros">
+
+                <div class="foto">
+
+                    <img src="nike1.jpg" alt="Nike Air Force 1">
+
+                    <span class="skidka">-20%</span>
+
+                    <span class="cena">96 €</span>
+
+                </div>
+
+                <h3>Nike Air Force 1</h3>
+
+            </a>
+
+
+            <!-- Adidas -->
+
+            <a href="adidas1.html" class="kros">
+
+                <div class="foto">
+
+                    <img src="" alt="Adidas Samba">
+
+                    <span class="cena">110 €</span>
+
+                </div>
+
+                <h3>Adidas Samba</h3>
+
+            </a>
+
+
+            <!-- New Balance -->
+
+            <a href="nb1.html" class="kros">
+
+                <div class="foto">
+
+                    <img src="nb1.jpg" alt="New Balance 550">
+
+                    <span class="cena">130 €</span>
+
+                </div>
+
+                <h3>New Balance 550</h3>
+
+            </a>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
