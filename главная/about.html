@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .menu {
+        background-color: black;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .home a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .home a:hover {
+        color: gray;
+        font-size: 17px;
+    }
+
+    .profile img {
+        width: 75px;
+        height: 65px;
+        object-fit: contain;
+    }
+    .korzinana{
+            height: 55px;
+            width: 55px;
+            border-radius: 50px;
+        }
+        .korzinana:hover{
+            opacity: 0.8;
+            height: 57px;
+            width: 57px;
+        }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="home">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="korzinka">
+            <a href="korzina.html"><img class="korzinana" src="korzina.png" alt="korzina"></a>
+        </div>
+        <div class="profile">
+            <img src="profil.png" alt="profile">
+        </div>
+    </div>
+</body>
+</html>

@@ -40,7 +40,7 @@
 
         .profile img {
             width: 75px;
-            height: 75px;
+            height: 65px;
             object-fit: contain;
         }
 
@@ -85,9 +85,9 @@
             padding-left: 5px;
         }
 
-
         .krosovki {
             display: flex;
+            flex-wrap: wrap;
             gap: 35px;
             margin-left: 40px;
             align-items: flex-start;
@@ -102,7 +102,6 @@
             width: 300px;
         }
 
-
         .foto {
             width: 100%;
             height: 400px;
@@ -116,7 +115,6 @@
             object-fit: contain;
         }
 
-
         .skidka {
             position: absolute;
             top: 10px;
@@ -125,8 +123,8 @@
             color: white;
             padding: 9px 14px;
             font-size: 15px;
+            border-radius: 10px;
         }
-
 
         .price {
             display: block;
@@ -136,14 +134,23 @@
             margin-top: 12px;
         }
 
-
         .kros h3 {
             font-size: 16px;
-            margin-top:25px;
+            margin-top: 25px;
         }
 
         .kros:hover img {
             opacity: 0.8;
+        }
+        .korzinana{
+            height: 55px;
+            width: 55px;
+            border-radius: 50px;
+        }
+        .korzinana:hover{
+            opacity: 0.8;
+            height: 57px;
+            width: 57px;
         }
     </style>
 </head>
@@ -151,28 +158,23 @@
 <body>
 
     <div class="menu">
-
         <div class="logo">
             <img src="logo.png" alt="logo">
         </div>
-
         <div class="about">
             <a href="about.html">ABOUT</a>
         </div>
-
+        <div class="korzinka">
+            <a href="korzina.html"><img class="korzinana" src="korzina.png" alt="korzina"></a>
+        </div>
         <div class="profile">
             <img src="profil.png" alt="profile">
         </div>
-
     </div>
 
     <div class="main">
-
-
         <div class="brands">
-
             <h2>BRANDS</h2>
-
             <ul>
                 <li><a href="#">Nike</a></li>
                 <li><a href="#">Jordan</a></li>
@@ -181,63 +183,108 @@
                 <li><a href="#">Vans</a></li>
                 <li><a href="#">Other</a></li>
             </ul>
-
         </div>
 
-
         <div class="krosovki">
-
-
             <a href="nike1.html" class="kros">
-
                 <div class="foto">
-
-                    <img src="nike1.jpg" alt="Nike Air Force 1">
-
+                    <img src="nike1.jpg" alt="Nike">
                     <span class="skidka">-20%</span>
-
                     <span class="cena">96 €</span>
-
                 </div>
-
-                <h3>Nike Air Force 1</h3>
-
+                <h3>Nike Air Force 1'07</h3>
             </a>
-
-
 
             <a href="adidas1.html" class="kros">
-
                 <div class="foto">
-
-                    <img src="" alt="Adidas Samba">
-
+                    <img src="adidas1.jpg" alt="Adidas">
                     <span class="cena">110 €</span>
-
                 </div>
-
-                <h3>Adidas Samba</h3>
-
+                <h3>Adidas Campus 00s</h3>
             </a>
-
-
 
             <a href="nb1.html" class="kros">
 
                 <div class="foto">
-
                     <img src="nb1.jpg" alt="New Balance 550">
-
                     <span class="cena">130 €</span>
-
                 </div>
-
                 <h3>New Balance 550</h3>
-
             </a>
 
-        </div>
+            <a href="vans1.html" class="kros">
 
+                <div class="foto">
+                    <img src="vans1.jpg" alt="vans">
+                    <span class="cena">70 €</span>
+                </div>
+                <h3>Vans Knu Skool</h3>
+            </a>
+
+            <a href="jordan1.html" class="kros">
+
+                <div class="foto">
+                    <img src="jordan1.jpg" alt="jordan">
+                    <span class="cena">110 €</span>
+                </div>
+                <h3>Jordan Air Jordan 1 Mid</h3>
+            </a>
+
+            <a href="other.html" class="kros">
+
+                <div class="foto">
+                    <img src="other.jpg" alt="other">
+                    <span class="skidka">-35%</span>
+                    <span class="cena">85 €</span>
+                </div>
+                <h3>Asics Gel-1130</h3>
+            </a>
+
+            <a href="nike2.html" class="kros">
+
+                <div class="foto">
+                    <img src="nike2.jpg" alt="Nike">
+                    <span class="cena">100 €</span>
+                </div>
+                <h3>Nike Air Force 1</h3>
+            </a>
+
+            <a href="other2.html" class="kros">
+
+                <div class="foto">
+                    <img src="other2.jpg" alt="other">
+                    <span class="cena">229 €</span>
+                </div>
+                <h3>Timberland Zimná obuv Premium 6-Inch</h3>
+            </a>
+
+            <a href="adidas2.html" class="kros">
+
+                <div class="foto">
+                    <img src="adidas2.jpg" alt="adidas">
+                    <span class="cena">120 €</span>
+                </div>
+                <h3>adidas Samba</h3>
+            </a>
+            <a href="nike3.html" class="kros">
+
+                <div class="foto">
+                    <img src="nike3.jpg" alt="nike">
+                    <span class="cena">170 €</span>
+                </div>
+                <h3>Nike Shox TL</h3>
+            </a>
+            <a href="vans2.html" class="kros">
+
+                <div class="foto">
+                    <img src="vans2.jpg" alt="vans">
+                    <span class="skidka">-15%</span>
+                    <span class="cena">100 €</span>
+                </div>
+                <h3>Vans VANS KNU SKOOL</h3>
+            </a>
+            
+        </div>
     </div>
 
 </body>
